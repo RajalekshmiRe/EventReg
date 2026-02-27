@@ -1,0 +1,40 @@
+# Database configuration (sensitive data)
+config.php
+
+# PHP logs and errors
+*.log
+error_log
+php_errors.log
+
+# XAMPP specific
+/xampp/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# VS Code settings
+.vscode/
+*.code-workspace
+
+# Editor backup files
+*.swp
+*.swo
+*~
+*.bak
+
+# Node modules (if used in future)
+node_modules/
+npm-debug.log
+
+# Environment files
+.env
+.env.local
+
+# Temporary files
+*.tmp
+*.temp
+/tmp/
