@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - EventReg</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-calendar-check"></i> EventReg</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header-section text-center">
+        <div class="container position-relative" style="z-index:2;">
+            <h1><i class="fas fa-envelope me-3"></i>Contact Us</h1>
+            <p>We'd love to hear from you! Get in touch with us today.</p>
+        </div>
+    </section>
+
+    <section style="padding:80px 0;background:var(--bg-light);">
+        <div class="container">
+
+            <!-- Contact Form Section -->
+            <div id="contactFormSection">
+                <div class="contact-wrapper">
+                    <div class="row g-0">
+                        <!-- Info Side -->
+                        <div class="col-lg-4">
+                            <div class="contact-info-side h-100">
+                                <h3>Get In Touch</h3>
+                                <p>We're here to help and answer any questions you might have.</p>
+
+                                <div class="contact-info-item">
+                                    <div class="contact-info-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                    <div class="contact-info-item-text">
+                                        <h5>Our Location</h5>
+                                        <p>123 Event Street<br>San Francisco, CA 94102<br>United States</p>
+                                    </div>
+                                </div>
+                                <div class="contact-info-item">
+                                    <div class="contact-info-item-icon"><i class="fas fa-phone"></i></div>
+                                    <div class="contact-info-item-text">
+                                        <h5>Phone Numbers</h5>
+                                        <p>Main: +1 (555) 123-4567<br>Support: +1 (555) 123-4568</p>
+                                    </div>
+                                </div>
+                                <div class="contact-info-item">
+                                    <div class="contact-info-item-icon"><i class="fas fa-envelope"></i></div>
+                                    <div class="contact-info-item-text">
+                                        <h5>Email</h5>
+                                        <p>info@eventreg.com<br>support@eventreg.com</p>
+                                    </div>
+                                </div>
+                                <div class="contact-info-item">
+                                    <div class="contact-info-item-icon"><i class="fas fa-clock"></i></div>
+                                    <div class="contact-info-item-text">
+                                        <h5>Business Hours</h5>
+                                        <p>Mon–Fri: 9:00 AM – 6:00 PM<br>Sat: 10:00 AM – 4:00 PM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Form Side -->
+                        <div class="col-lg-8">
+                            <div class="contact-form-side">
+                                <h3 style="color:var(--text-primary);font-size:24px;margin-bottom:8px;"><i class="fas fa-paper-plane me-2" style="color:var(--primary);"></i>Send Us a Message</h3>
+                                <p style="color:var(--text-secondary);margin-bottom:28px;">Fill out the form below and we'll get back to you within 24-48 hours.</p>
+
+                                <div id="messageDiv"></div>
+
+                                <form id="contactForm">
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label">Full Name *</label>
+                                            <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Email Address *</label>
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Phone Number *</label>
+                                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="10-digit phone number" pattern="[0-9]{10}" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Subject *</label>
+                                            <select class="form-select" id="subject" name="subject" required>
+                                                <option value="">Choose a subject...</option>
+                                                <option>General Inquiry</option>
+                                                <option>Event Registration</option>
+                                                <option>Technical Support</option>
+                                                <option>Partnership</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label">Message *</label>
+                                            <textarea class="form-control" id="message" name="message" placeholder="Write your message here..." required></textarea>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-primary btn-lg w-100" id="submitBtn">
+                                                Send Message <i class="fas fa-paper-plane ms-2"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Success Card (hidden initially) -->
+            <div id="successCard" style="display:none;">
+                <div class="success-container">
+                    <div class="success-icon-wrap"><i class="fas fa-check"></i></div>
+                    <h2 style="color:var(--success);font-size:32px;margin-bottom:12px;">🎉 Message Sent Successfully!</h2>
+                    <p style="color:var(--text-secondary);font-size:17px;">Thank you for contacting us, <strong id="senderName"></strong>!</p>
+                    <p style="color:var(--text-secondary);font-size:17px;">We'll get back to you at <strong id="senderEmail"></strong> soon.</p>
+                    <div style="background:var(--bg-light);padding:20px;border-radius:var(--radius-md);margin:24px 0;border:1px solid var(--border);">
+                        <p style="margin-bottom:8px;color:var(--text-secondary);"><i class="fas fa-clock me-2" style="color:var(--primary);"></i><strong>Response Time:</strong> We typically respond within 24–48 hours.</p>
+                        <p style="margin:0;color:var(--text-secondary);"><i class="fas fa-envelope me-2" style="color:var(--primary);"></i><strong>Check your email:</strong> A confirmation will be sent shortly.</p>
+                    </div>
+                    <div class="d-flex gap-3 justify-content-center flex-wrap mt-2">
+                        <a href="contact.html" class="btn btn-primary btn-lg"><i class="fas fa-arrow-left me-2"></i>Send Another Message</a>
+                        <a href="index.html" class="btn btn-success btn-lg"><i class="fas fa-home me-2"></i>Back to Home</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="footer-brand"><i class="fas fa-calendar-check me-2"></i>EventReg</div>
+            <hr class="footer-divider">
+            <p>&copy; 2026 EventReg. All rights reserved. &nbsp;|&nbsp; <a href="index.html">Home</a> &nbsp;|&nbsp; <a href="about.html">About</a> &nbsp;|&nbsp; <a href="faq.html">FAQ</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Contact form handler - all original logic preserved
+        document.getElementById('contactForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const submitBtn  = document.getElementById('submitBtn');
+            const messageDiv = document.getElementById('messageDiv');
+
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Sending...';
+
+            const formData = new FormData(this);
+            try {
+                const response = await fetch('contact_process.php', { method: 'POST', body: formData });
+                const data = await response.json();
+
+                if (data.success) {
+                    document.getElementById('contactFormSection').style.display = 'none';
+                    document.getElementById('senderName').textContent  = document.getElementById('fullName').value;
+                    document.getElementById('senderEmail').textContent = document.getElementById('email').value;
+                    const card = document.getElementById('successCard');
+                    card.style.display = 'block';
+                    card.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                    messageDiv.innerHTML = `<div class="alert alert-danger alert-dismissible fade show"><i class="fas fa-exclamation-circle me-2"></i>${data.message}<button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>`;
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = 'Send Message <i class="fas fa-paper-plane ms-2"></i>';
+                }
+            } catch (error) {
+                messageDiv.innerHTML = `<div class="alert alert-danger alert-dismissible fade show"><i class="fas fa-exclamation-circle me-2"></i>An error occurred. Please try again.<button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>`;
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = 'Send Message <i class="fas fa-paper-plane ms-2"></i>';
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

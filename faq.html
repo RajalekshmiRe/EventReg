@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - EventReg</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-calendar-check"></i> EventReg</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header-section text-center">
+        <div class="container position-relative" style="z-index:2;">
+            <h1><i class="fas fa-question-circle me-3"></i>Frequently Asked Questions</h1>
+            <p>Find answers to common questions about our event registration system</p>
+        </div>
+    </section>
+
+    <section style="padding:80px 0;background:var(--bg-light);">
+        <div class="container">
+            <div style="max-width:860px;margin:0 auto;">
+
+                <!-- Registration -->
+                <div class="mb-5">
+                    <div style="display:flex;align-items:center;gap:14px;margin-bottom:24px;">
+                        <div style="width:48px;height:48px;background:var(--gradient);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;color:white;font-size:20px;flex-shrink:0;"><i class="fas fa-user-plus"></i></div>
+                        <h2 style="color:var(--text-primary);font-size:22px;margin:0;">Registration Questions</h2>
+                    </div>
+                    <div class="accordion" id="regFAQ">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#reg1">How do I register for an event?</button></h2>
+                            <div id="reg1" class="accordion-collapse collapse show" data-bs-parent="#regFAQ"><div class="accordion-body">Registration is simple! Go to the registration page, fill in your full name, email address, phone number, and select the event. Click "Register Now" and you'll receive a confirmation message instantly.</div></div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#reg2">Can I register for multiple events?</button></h2>
+                            <div id="reg2" class="accordion-collapse collapse" data-bs-parent="#regFAQ"><div class="accordion-body">Yes! You can register for multiple events. However, you need to complete a separate registration for each event. Each registration is tracked independently in our system.</div></div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#reg3">What information do I need to provide?</button></h2>
+                            <div id="reg3" class="accordion-collapse collapse" data-bs-parent="#regFAQ"><div class="accordion-body">You need to provide your full name (minimum 3 characters), a valid email address, a 10-digit phone number, and select the event you wish to attend. All fields are mandatory.</div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Events -->
+                <div class="mb-5">
+                    <div style="display:flex;align-items:center;gap:14px;margin-bottom:24px;">
+                        <div style="width:48px;height:48px;background:linear-gradient(135deg,#06b6d4,#8b5cf6);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;color:white;font-size:20px;flex-shrink:0;"><i class="fas fa-calendar-alt"></i></div>
+                        <h2 style="color:var(--text-primary);font-size:22px;margin:0;">Event Questions</h2>
+                    </div>
+                    <div class="accordion" id="eventFAQ">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#event1">What events are currently available?</button></h2>
+                            <div id="event1" class="accordion-collapse collapse" data-bs-parent="#eventFAQ"><div class="accordion-body">We currently offer four exciting events: Tech Conference 2024, Web Development Workshop, AI & ML Summit, and Digital Marketing Bootcamp. Visit our Events page to see detailed information about each.</div></div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#event2">Are the events free or paid?</button></h2>
+                            <div id="event2" class="accordion-collapse collapse" data-bs-parent="#eventFAQ"><div class="accordion-body">Event fees vary by event type. Some events are free while others may require a registration fee. Detailed pricing will be provided during the registration process and on the event details page.</div></div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#event3">Can I cancel my registration?</button></h2>
+                            <div id="event3" class="accordion-collapse collapse" data-bs-parent="#eventFAQ"><div class="accordion-body">Yes, you can cancel your registration. Please contact our support team at support@eventreg.com with your registration details at least 48 hours before the event starts.</div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical -->
+                <div class="mb-5">
+                    <div style="display:flex;align-items:center;gap:14px;margin-bottom:24px;">
+                        <div style="width:48px;height:48px;background:linear-gradient(135deg,#10b981,#06b6d4);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;color:white;font-size:20px;flex-shrink:0;"><i class="fas fa-laptop-code"></i></div>
+                        <h2 style="color:var(--text-primary);font-size:22px;margin:0;">Technical Questions</h2>
+                    </div>
+                    <div class="accordion" id="techFAQ">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tech1">Is my data secure?</button></h2>
+                            <div id="tech1" class="accordion-collapse collapse" data-bs-parent="#techFAQ"><div class="accordion-body">Absolutely! We use industry-standard security measures including encrypted connections, secure database storage, and protection against SQL injection. Your information is never shared with third parties without your consent.</div></div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tech2">Can I use this on my mobile phone?</button></h2>
+                            <div id="tech2" class="accordion-collapse collapse" data-bs-parent="#techFAQ"><div class="accordion-body">Yes! Our website is fully responsive and works perfectly on all devices including smartphones, tablets, laptops, and desktop computers. Register from anywhere, anytime.</div></div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tech3">What if I encounter an error?</button></h2>
+                            <div id="tech3" class="accordion-collapse collapse" data-bs-parent="#techFAQ"><div class="accordion-body">If you experience any technical issues, please contact our support team at support@eventreg.com or call us at +1 (555) 123-4568. We're available 24/7 to assist you.</div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Account -->
+                <div class="mb-5">
+                    <div style="display:flex;align-items:center;gap:14px;margin-bottom:24px;">
+                        <div style="width:48px;height:48px;background:linear-gradient(135deg,#f59e0b,#ef4444);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;color:white;font-size:20px;flex-shrink:0;"><i class="fas fa-user-circle"></i></div>
+                        <h2 style="color:var(--text-primary);font-size:22px;margin:0;">Account Questions</h2>
+                    </div>
+                    <div class="accordion" id="accountFAQ">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc1">Can I use the same email for multiple registrations?</button></h2>
+                            <div id="acc1" class="accordion-collapse collapse" data-bs-parent="#accountFAQ"><div class="accordion-body">Each email address can only be registered once per event. However, you can use the same email to register for different events. This prevents duplicate registrations and ensures accurate tracking.</div></div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc2">How do I update my registration information?</button></h2>
+                            <div id="acc2" class="accordion-collapse collapse" data-bs-parent="#accountFAQ"><div class="accordion-body">To update your registration details, please contact our support team at support@eventreg.com with your current registration information and the changes you'd like to make. We'll update your details promptly.</div></div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc3">Will I receive a confirmation message?</button></h2>
+                            <div id="acc3" class="accordion-collapse collapse" data-bs-parent="#accountFAQ"><div class="accordion-body">Yes! You will see an instant confirmation message on the screen after successful registration. We're also working on implementing automatic email confirmations very soon.</div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div style="background:var(--gradient);padding:50px;border-radius:var(--radius-xl);text-align:center;">
+                    <h3 style="color:white;font-size:28px;margin-bottom:12px;">Still Have Questions?</h3>
+                    <p style="color:rgba(255,255,255,0.85);font-size:17px;margin-bottom:28px;">Our support team is here to help you!</p>
+                    <a href="contact.html" class="btn btn-lg" style="background:white;color:var(--primary);font-weight:700;border-radius:50px;padding:14px 38px;">Contact Us <i class="fas fa-envelope ms-2"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="footer-brand"><i class="fas fa-calendar-check me-2"></i>EventReg</div>
+            <hr class="footer-divider">
+            <p>&copy; 2026 EventReg. All rights reserved. &nbsp;|&nbsp; <a href="index.html">Home</a> &nbsp;|&nbsp; <a href="about.html">About</a> &nbsp;|&nbsp; <a href="contact.html">Contact</a></p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

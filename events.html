@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - EventReg</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-calendar-check"></i> EventReg</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header-section text-center">
+        <div class="container position-relative" style="z-index:2;">
+            <h1><i class="fas fa-calendar-alt me-3"></i>Our Events</h1>
+            <p>Discover amazing events and experiences tailored just for you</p>
+        </div>
+    </section>
+
+    <section style="padding:80px 0;background:var(--bg-light);">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Event 1 -->
+                <div class="col-lg-6">
+                    <div class="event-card">
+                        <div class="event-card-header">
+                            <span class="event-tag">Technology • Professional</span>
+                            <div style="font-size:52px;color:white;margin:12px 0;position:relative;z-index:1;"><i class="fas fa-laptop-code"></i></div>
+                            <h3 style="color:white;font-size:26px;font-weight:700;position:relative;z-index:1;">Tech Conference 2024</h3>
+                        </div>
+                        <div class="event-card-body">
+                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;color:var(--text-secondary);font-size:15px;"><i class="fas fa-calendar" style="color:var(--primary);width:18px;"></i><span><strong>Date:</strong> March 15–17, 2024</span></div>
+                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;color:var(--text-secondary);font-size:15px;"><i class="fas fa-clock" style="color:var(--primary);width:18px;"></i><span><strong>Time:</strong> 9:00 AM – 6:00 PM</span></div>
+                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;color:var(--text-secondary);font-size:15px;"><i class="fas fa-map-marker-alt" style="color:var(--primary);width:18px;"></i><span><strong>Venue:</strong> Tech Convention Center, Silicon Valley</span></div>
+                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:18px;color:var(--text-secondary);font-size:15px;"><i class="fas fa-users" style="color:var(--primary);width:18px;"></i><span><strong>Capacity:</strong> 500 Attendees</span></div>
+                            <p style="color:var(--text-secondary);line-height:1.7;margin-bottom:18px;">Join us for the biggest tech conference of the year! Connect with industry leaders and network with professionals from around the world.</p>
+                            <div style="background:var(--bg-light);padding:18px;border-radius:var(--radius-md);margin-bottom:20px;border:1px solid var(--border);">
+                                <h6 style="color:var(--text-primary);font-weight:700;margin-bottom:12px;"><i class="fas fa-star" style="color:var(--primary);"></i> Highlights</h6>
+                                <ul style="list-style:none;padding:0;margin:0;">
+                                    <li style="padding:4px 0;color:var(--text-secondary);font-size:14px;"><i class="fas fa-check-circle" style="color:var(--success);margin-right:8px;"></i>50+ Expert Speakers</li>
+                                    <li style="padding:4px 0;color:var(--text-secondary);font-size:14px;"><i class="fas fa-check-circle" style="color:var(--success);margin-right:8px;"></i>30+ Technical Sessions</li>
+                                    <li style="padding:4px 0;color:var(--text-secondary);font-size:14px;"><i class="fas fa-check-circle" style="color:var(--success);margin-right:8px;"></i>Networking Opportunities</li>
+                                    <li style="padding:4px 0;color:var(--text-secondary);font-size:14px;"><i class="fas fa-check-circle" style="color:var(--success);margin-right:8px;"></i>Certificate of Participation</li>
+                                </ul>
+                            </div>
+                            <a href="register.html" class="btn btn-primary w-100">Register Now <i class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="col-lg-6">
+                    <div class="event-card">
+                        <div class="event-card-header" style="background:linear-gradient(135deg,#06b6d4,#6366f1);">
+                            <span class="event-tag">Workshop • Beginner-Friendly</span>
+                            <div style="font-size:52px;color:white;margin:12px 0;position:relative;z-index:1;"><i class="fas fa-code"></i></div>
+                            <h3 style="color:white;font-size:26px;font-weight:700;position:relative;z-index:1;">Web Development Workshop</h3>
+                        </div>
+                        <div class="event-card-body">
+                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;color:var(--text-secondary);font-size:15px;"><i class="fas fa-calendar" style="color:var(--primary);width:18px;"></i><span><strong>Date:</strong> April 5–7, 2024</span></div>
+                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;color:var(--text-secondary);font-size:15px;"><i class="fas fa-clock" style="color:var(--primary);width:18px;"></i><span><strong>Time:</strong> 10:00 AM – 5:00 PM</span></div>
+                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;color:var(--text-secondary);font-size:15px;"><i class="fas fa-map-marker-alt" style="color:var(--primary);width:18px;"></i><span><strong>Venue:</strong> Digital Learning Hub, San Francisco</span></div>
+                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:18px;color:var(--text-secondary);font-size:15px;"><i class="fas fa-users" style="color:var(--primary);width:18px;"></i><span><strong>Capacity:</strong> 100 Attendees</span></div>
+                            <p style="color:var(--text-secondary);line-height:1.7;margin-bottom:18px;">Master modern web development with hands-on training in HTML, CSS, JavaScript, and popular frameworks. Perfect for beginners and intermediate developers.</p>
+                            <div style="background:var(--bg-light);padding:18px;border-radius:var(--radius-md);margin-bottom:20px;border:1px solid var(--border);">
+                                <h6 style="color:var(--text-primary);font-weight:700;margin-bottom:12px;"><i class="fas fa-star" style="color:var(--primary);"></i> What You'll Learn</h6>
+                                <ul style="list-style:none;padding:0;margin:0;">
+                                    <li style="padding:4px 0;color:var(--text-secondary);font-size:14px;"><i class="fas fa-check-circle" style="color:var(--success);margin-right:8px;"></i>HTML5 & CSS3 Fundamentals</li>
+                                    <li style="padding:4px 0;color:var(--text-secondary);font-size:14px;"><i class="fas fa-check-circle" style="color:var(--success);margin-right:8px;"></i>JavaScript & ES6+ Features</li>
+                                    <li style="padding:4px 0;color:var(--text-secondary);font-size:14px;"><i class="fas fa-check-circle" style="color:var(--success);margin-right:8px;"></i>Responsive Design with Bootstrap</li>
+                                    <li style="padding:4px 0;color:var(--text-secondary);font-size:14px;"><i class="fas fa-check-circle" style="color:var(--success);margin-right:8px;"></i>Backend Basics (PHP/Node.js)</li>
+                                </ul>
+                            </div>
+                            <a href="register.html" class="btn btn-primary w-100">Register Now <i class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="col-lg-6">
+                    <div class="event-card">
+                        <div class="event-card-header" style="background:linear-gradient(135deg,#8b5cf6,#ec4899);">
+                            <span class="event-tag">Summit • Advanced</span>
+                            <div style="font-size:52px;color:white;margin:12px 0;position:relative;z-index:1;"><i class="fas fa-brain"></i></div>
+                            <h3 style="color:white;font-size:26px;font-weight:700;position:relative;z-index:1;">AI & ML Summit</h3>
+                        </div>
+                        <div class="event-card-body">
+                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;color:var(--text-secondary);font-size:15px;"><i class="fas fa-calendar" style="color:var(--primary);width:18px;"></i><span><strong>Date:</strong> May 20–22, 2024</span></div>
+                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;color:var(--text-secondary);font-size:15px;"><i class="fas fa-clock" style="color:var(--primary);width:18px;"></i><span><strong>Time:</strong> 9:00 AM – 7:00 PM</span></div>
+                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;color:var(--text-secondary);font-size:15px;"><i class="fas fa-map-marker-alt" style="color:var(--primary);width:18px;"></i><span><strong>Venue:</strong> AI Innovation Center, Boston</span></div>
+                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:18px;color:var(--text-secondary);font-size:15px;"><i class="fas fa-users" style="color:var(--primary);width:18px;"></i><span><strong>Capacity:</strong> 300 Attendees</span></div>
+                            <p style="color:var(--text-secondary);line-height:1.7;margin-bottom:18px;">Explore the future of Artificial Intelligence and Machine Learning. Learn from leading researchers and practitioners about the latest advancements.</p>
+                            <div style="background:var(--bg-light);padding:18px;border-radius:var(--radius-md);margin-bottom:20px;border:1px solid var(--border);">
+                                <h6 style="color:var(--text-primary);font-weight:700;margin-bottom:12px;"><i class="fas fa-star" style="color:var(--primary);"></i> Topics Covered</h6>
+                                <ul style="list-style:none;padding:0;margin:0;">
+                                    <li style="padding:4px 0;color:var(--text-secondary);font-size:14px;"><i class="fas fa-check-circle" style="color:var(--success);margin-right:8px;"></i>Deep Learning & Neural Networks</li>
+                                    <li style="padding:4px 0;color:var(--text-secondary);font-size:14px;"><i class="fas fa-check-circle" style="color:var(--success);margin-right:8px;"></i>Natural Language Processing</li>
+                                    <li style="padding:4px 0;color:var(--text-secondary);font-size:14px;"><i class="fas fa-check-circle" style="color:var(--success);margin-right:8px;"></i>Computer Vision Applications</li>
+                                    <li style="padding:4px 0;color:var(--text-secondary);font-size:14px;"><i class="fas fa-check-circle" style="color:var(--success);margin-right:8px;"></i>AI Ethics & Responsible AI</li>
+                                </ul>
+                            </div>
+                            <a href="register.html" class="btn btn-primary w-100">Register Now <i class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 4 -->
+                <div class="col-lg-6">
+                    <div class="event-card">
+                        <div class="event-card-header" style="background:linear-gradient(135deg,#f59e0b,#ef4444);">
+                            <span class="event-tag">Bootcamp • All Levels</span>
+                            <div style="font-size:52px;color:white;margin:12px 0;position:relative;z-index:1;"><i class="fas fa-bullhorn"></i></div>
+                            <h3 style="color:white;font-size:26px;font-weight:700;position:relative;z-index:1;">Digital Marketing Bootcamp</h3>
+                        </div>
+                        <div class="event-card-body">
+                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;color:var(--text-secondary);font-size:15px;"><i class="fas fa-calendar" style="color:var(--primary);width:18px;"></i><span><strong>Date:</strong> June 10–14, 2024</span></div>
+                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;color:var(--text-secondary);font-size:15px;"><i class="fas fa-clock" style="color:var(--primary);width:18px;"></i><span><strong>Time:</strong> 10:00 AM – 6:00 PM</span></div>
+                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;color:var(--text-secondary);font-size:15px;"><i class="fas fa-map-marker-alt" style="color:var(--primary);width:18px;"></i><span><strong>Venue:</strong> Marketing Excellence Center, New York</span></div>
+                            <div style="display:flex;align-items:center;gap:10px;margin-bottom:18px;color:var(--text-secondary);font-size:15px;"><i class="fas fa-users" style="color:var(--primary);width:18px;"></i><span><strong>Capacity:</strong> 150 Attendees</span></div>
+                            <p style="color:var(--text-secondary);line-height:1.7;margin-bottom:18px;">Transform your marketing skills with our intensive bootcamp covering SEO, social media, content marketing, analytics, and more.</p>
+                            <div style="background:var(--bg-light);padding:18px;border-radius:var(--radius-md);margin-bottom:20px;border:1px solid var(--border);">
+                                <h6 style="color:var(--text-primary);font-weight:700;margin-bottom:12px;"><i class="fas fa-star" style="color:var(--primary);"></i> Course Modules</h6>
+                                <ul style="list-style:none;padding:0;margin:0;">
+                                    <li style="padding:4px 0;color:var(--text-secondary);font-size:14px;"><i class="fas fa-check-circle" style="color:var(--success);margin-right:8px;"></i>SEO & SEM Strategies</li>
+                                    <li style="padding:4px 0;color:var(--text-secondary);font-size:14px;"><i class="fas fa-check-circle" style="color:var(--success);margin-right:8px;"></i>Social Media Marketing</li>
+                                    <li style="padding:4px 0;color:var(--text-secondary);font-size:14px;"><i class="fas fa-check-circle" style="color:var(--success);margin-right:8px;"></i>Content Marketing & Strategy</li>
+                                    <li style="padding:4px 0;color:var(--text-secondary);font-size:14px;"><i class="fas fa-check-circle" style="color:var(--success);margin-right:8px;"></i>Analytics & Performance Tracking</li>
+                                </ul>
+                            </div>
+                            <a href="register.html" class="btn btn-primary w-100">Register Now <i class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CTA -->
+            <div style="background:var(--gradient);padding:50px;border-radius:var(--radius-xl);text-align:center;margin-top:50px;">
+                <h3 style="color:white;font-size:28px;margin-bottom:12px;">Can't Find What You're Looking For?</h3>
+                <p style="color:rgba(255,255,255,0.85);font-size:17px;margin-bottom:28px;">Contact us to learn about upcoming events or suggest a new topic!</p>
+                <a href="contact.html" class="btn btn-lg" style="background:white;color:var(--primary);font-weight:700;border-radius:50px;padding:14px 38px;">Contact Us <i class="fas fa-envelope ms-2"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="footer-brand"><i class="fas fa-calendar-check me-2"></i>EventReg</div>
+            <hr class="footer-divider">
+            <p>&copy; 2026 EventReg. All rights reserved. &nbsp;|&nbsp; <a href="index.html">Home</a> &nbsp;|&nbsp; <a href="about.html">About</a> &nbsp;|&nbsp; <a href="contact.html">Contact</a> &nbsp;|&nbsp; <a href="faq.html">FAQ</a></p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

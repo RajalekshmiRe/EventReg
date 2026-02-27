@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - EventReg</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-calendar-check"></i> EventReg</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="register.html">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section" style="padding:60px 0;">
+        <div class="container position-relative" style="z-index:2;">
+            <div class="row justify-content-center">
+                <div class="col-md-7 col-lg-6">
+                    <div class="registration-card">
+                        <div class="registration-header">
+                            <div style="width:70px;height:70px;background:rgba(255,255,255,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:32px;color:white;position:relative;z-index:1;">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <h2>Event Registration Form</h2>
+                            <p style="color:rgba(255,255,255,0.8);margin:8px 0 0;font-size:15px;position:relative;z-index:1;">Fill in your details to register for an event</p>
+                        </div>
+                        <div class="registration-body">
+                            <div id="message"></div>
+                            <form id="registrationForm" class="needs-validation" novalidate>
+                                <div class="mb-4">
+                                    <label for="fullName" class="form-label"><i class="fas fa-user me-2" style="color:var(--primary);"></i>Full Name *</label>
+                                    <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                                    <div class="invalid-feedback">Please enter your full name (min 3 characters).</div>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="email" class="form-label"><i class="fas fa-envelope me-2" style="color:var(--primary);"></i>Email Address *</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" required>
+                                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="phone" class="form-label"><i class="fas fa-phone me-2" style="color:var(--primary);"></i>Phone Number *</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter 10-digit phone number" pattern="[0-9]{10}" required>
+                                    <div class="invalid-feedback">Please enter a valid 10-digit phone number.</div>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="eventName" class="form-label"><i class="fas fa-calendar-alt me-2" style="color:var(--primary);"></i>Select Event *</label>
+                                    <select class="form-select" id="eventName" name="eventName" required>
+                                        <option value="">Choose an event...</option>
+                                        <option value="Tech Conference 2024">Tech Conference 2024</option>
+                                        <option value="Web Development Workshop">Web Development Workshop</option>
+                                        <option value="AI & ML Summit">AI & ML Summit</option>
+                                        <option value="Digital Marketing Bootcamp">Digital Marketing Bootcamp</option>
+                                    </select>
+                                    <div class="invalid-feedback">Please select an event.</div>
+                                </div>
+                                <div class="d-grid mb-3">
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        <i class="fas fa-calendar-check me-2"></i>Register Now
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="text-center mt-3">
+                                <a href="view_registrations.php" style="color:var(--primary);font-weight:500;font-size:14px;"><i class="fas fa-list me-1"></i>View All Registrations</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="footer-brand"><i class="fas fa-calendar-check me-2"></i>EventReg</div>
+            <hr class="footer-divider">
+            <p>&copy; 2026 EventReg. All rights reserved. &nbsp;|&nbsp; <a href="index.html">Home</a> &nbsp;|&nbsp; <a href="events.html">Events</a> &nbsp;|&nbsp; <a href="faq.html">FAQ</a></p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
